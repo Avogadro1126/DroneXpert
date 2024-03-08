@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/video.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../jpg以及gif资源/droneXpert.ico" >
+    <title>Video_display</title>
+    <!-- <script>
+        window.addEventListener('DOMContentLoaded', function() {
+          var urlParams = new URLSearchParams(window.location.search);
+          var key1 = urlParams.get('key1');
+          document.getElementById('account').innerHTML = "http:"+key1+":8080/stream_simple.html";
+        });
+      </script> -->
+</head>
+<body>
+        
+    <div id="videoContainer"></div>
+        <script>
+            window.onload = function() {
+                var queryString = window.location.search;
+                var urlParams = new URLSearchParams(queryString);
+                var key1 = urlParams.get('key1');
+                if (key1) {
+                    var videoUrl = 'http://' + key1 + '/javascript_simple.html'; // 更新监控视频网址的格式
+                    var videoElement = document.createElement('iframe'); // 使用iframe来嵌入网页
+                    videoElement.src = videoUrl;
+                    videoElement.width = '840px';
+                    videoElement.height = '720px';
+                    scrolling="yes" ;
+                    frameborder="0";
+                    document.getElementById('videoContainer').appendChild(videoElement);
+                } 
+                // else {
+                //     document.getElementById('videoContainer').innerText = '当前地址有误！';
+                // }
+            }
+        </script>
+    <div class="nav">
+        <ul class="navlist">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="https://ditu.amap.com/">校园地图</a></li>
+            <li><a href="#">选项3</a></li>
+            <li><a href="#">选项4</a></li>
+            <li><a href="#">选项5</a></li>
+            <li><a href="#">选项6</a></li>
+            <li><a href="logn_in.html">返回</a></li>
+        </ul>
+    </div>
+<!-- 时钟功能 -->
+<!-- 
+        <div class="media-body">
+            <div class="media" id="top-menu">
+                <div id="time" class="pull-right">
+                    <span id="hours"></span>
+                    :
+                    <span id="min"></span>
+                    :
+                    <span id="sec"></span>
+                </div>
+            </div>
+        </div>
+
+     -
+</body>
+</html>
