@@ -2,7 +2,7 @@
 
 body {
     height: 100vh;
-    background: url(../jpg以及gif资源/video_background.png) no-repeat;
+    background: url(video_background.png) no-repeat;
     background-size: cover;
     display: flex;
     justify-content: center;
