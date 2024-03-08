@@ -1,0 +1,43 @@
+*{margin: 0px;padding: 0px; list-style:none;text-decoration: none; font-family: "monserrat",sans-serif;}
+
+body {
+    height: 100vh;
+    background: url(../jpg以及gif资源/video_background.png) no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav{
+    position: fixed;
+    top: 0%;
+    height: 50px;
+    width: 100%;
+    background: linear-gradient(grey,white);
+
+}
+
+.navlist li{
+    float: left;
+    height: 40px;
+    width: 200px;
+    line-height: 40px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.navlist a{
+    color: black;
+    display: block;
+}
+
+.navlist{
+    width: 2000px;
+    margin: 5px;
+}
+
+.navlist a:hover{
+    background: whitesmoke
+}
+

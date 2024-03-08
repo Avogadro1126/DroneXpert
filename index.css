@@ -1,0 +1,128 @@
+*{margin: 0px;padding: 0px;font-family: "monserrat",sans-serif;}
+/* 顶部布局开始 */
+/* nav {
+    position:relative;
+    width:590px;
+    height:50px;
+    background-color:var
+    (--nav-background-color);
+    border-radius:8px;
+    box-shadow:0 2px 3px rgba(red, green, blue, alpha)
+}
+nav a {
+    position:relative;
+    display:block;
+    float: left;
+    font-size: 15px;
+    line-height: 50px;
+    width: 100px;
+    height:50px;
+    color:#fff;
+    text-transform:uppercase;
+    text-decoration:none;
+    text-align:center;
+    z-index: 10;}
+
+
+    /* nav a:nth-child(1){width: 100px;}
+    nav a:nth-child(2){width:110px;}
+    nav a:nth-child(3){width: 100px;}
+    nav a:nth-child(4){width:160px;}
+    nav a:nth-child(5){width: 120px;}
+
+nav.animation{
+    position:absolute;
+    height:100%;
+    width:100px;
+    background-color:#F97F51;
+    z-index:9;
+    border-radius:8px;
+     
+} */ 
+
+.landing_page{
+    width: 100%;
+    height: 100vh;
+    background:#a39f9f;
+    position: relative;
+    overflow: hidden;
+}
+.landing_page::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;    
+    background: url("people-man-office-work-preview.jpg") no-repeat;
+    background-size: cover;
+    opacity: .3;
+    animation: anim 25s linear infinite;
+}
+@keyframes anim{
+    50%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.page-content{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    z-index: 1;
+    width: 100%;
+    max-width:800px;
+    text-align: center;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+.page-content h1{
+    color: #ff7979;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+.page-content p{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.page-content a{
+    display: inline-block;
+    text-decoration: none;
+    color: #ff7979;
+    border:2px solid #ff7979;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    transition: 0.4s linear;
+}
+.page-content a:hover{
+    color: #fff;
+    background: #ff7979;
+}
+/* .text{
+    padding:10px;
+     text-align: justify;
+}
+.text div{
+    margin-bottom: 6px;
+} */
+/* .tll{
+    width: 100%;
+    height:80px;
+    border: 1px soild yellow;
+
+} */
+.tll_img{
+    position:absolute;   
+    left:2%;
+    top:0%;
+    width: 20%;
+    height: auto;
+    /* margin-top: auto;
+    margin-left: 20px; */
+}
+/* 顶部布局结束 */
