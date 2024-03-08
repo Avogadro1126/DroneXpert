@@ -6,7 +6,7 @@
 
 body {
     height: 100vh;
-    background: url(../css/upper_page.png) no-repeat;
+    background: url(upper_page.png) no-repeat;
     background-size: cover;
     display: flex;
     justify-content: center;
